@@ -1421,7 +1421,7 @@ void accountStatment(int num)
 
             if(count == 0)
             {
-                printf("\n\tNo record for the account you seached\n\n");
+                printf("\n\tNo record for the account you searched\n\n");
             }
 
         reenterChoice:
@@ -1434,7 +1434,7 @@ void accountStatment(int num)
             fprintf(printFIle,"\n\n\tThis is an electronically generated document, does not require any signature.\n\n");
             fclose(printFIle);
 
-            system(system("cd  /D \"C:\\Windows\\System32\" & rundll32.exe mshtml.dll,PrintHTML \" D:\\HR\\NIBM____________\\First semester 01\\Programing_Fundemetals\\Project\\MY\\printfFIle.txt"));
+            system(system("cd  /D \"C:\\Windows\\System32\" & rundll32.exe mshtml.dll,PrintHTML \" D:\\HR\\NIBM____________\\First semester 01\\Programing_Fundemetals\\Project\\Bank Management System - C\\printfFIle.txt"));
             printf("\n\tStatement is printed succefully \n\tLoading Main menu\n");
             remove("printfFIle.txt");
             delay();
